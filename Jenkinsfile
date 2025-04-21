@@ -25,9 +25,15 @@ pipeline {
             }
         }
         stage('Sonar-Report') {
-            steps {
-                bat 'mvn clean install sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
-            }
-        }
+    steps {
+        bat '''
+            mvn sonar:sonar ^
+            -Dsonar.projectKey=anushka_webapp ^
+            -Dsonar.organization=anushka ^
+            -Dsonar.host.url=https://sonarcloud.io ^
+            -Dsonar.login=5f09ded7e5db4d0ea0dcfd937c181af706e60475
+        '''
+    }
+}
     }
 }
