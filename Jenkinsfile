@@ -25,15 +25,18 @@ pipeline {
             }
         }
         stage('Sonar-Report') {
+    stage('Sonar-Report') {
     steps {
         bat '''
             mvn sonar:sonar ^
-            -Dsonar.projectKey=anushka_webapp ^
-            -Dsonar.organization=anushka ^
+            -Dsonar.projectKey=anushka129_webapp ^
+            -Dsonar.organization=anushka129 ^
             -Dsonar.host.url=https://sonarcloud.io ^
-            -Dsonar.login=5f09ded7e5db4d0ea0dcfd937c181af706e60475
+            -Dsonar.login=cb96c968ac93cfd3ea167f47fb72c7bc9d5ede00
         '''
     }
+}
+
 }
     }
 }
