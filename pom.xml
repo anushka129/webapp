@@ -8,6 +8,50 @@
   <name>java-webapp</name>
   <url>http://maven.apache.org</url>
 
+	<repositories>
+
+<repository>
+
+<id>tiet</id>
+
+<name>Releases</name>
+
+<url>http://localhost:8081/nexus/content/repositories/tiet/</url>
+
+</repository>
+
+</repositories>
+
+<distribution Management>
+
+<repository>
+
+<id>tiet</id>
+
+<name>Releases</name>
+
+<url>http://localhost:8081/nexus/content/repositories/tiet/</url>
+
+</repository>
+
+</distribution Management>
+
+Edit.m2/settings.xml and add nexus server credentials
+<settings>
+	<servers>
+		<server>
+
+<id>tiet</id>
+
+<username>admin</username>
+
+<password>admin</password>
+
+</server>
+
+</servers>
+
+</settings>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
