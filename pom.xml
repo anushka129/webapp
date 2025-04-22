@@ -30,7 +30,7 @@
 
 <name>Releases</name>
 
-<url>http://localhost:8081/nexus/content/repositories/tiet/</url>
+<url>http://localhost:8081/repository/tiet/</url>
 
 </repository>
 
