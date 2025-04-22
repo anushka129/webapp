@@ -33,14 +33,5 @@ pipeline {
         '''
       }
     }
-
-    stage('Deploy') {
-      steps {
-        bat '''
-          echo Running App on port 9999...
-          start /B java -DappPort=9999 -jar target/webapp-1.0-SNAPSHOT.jar
-        '''
-      }
-    }
   }
 }
