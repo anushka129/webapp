@@ -36,22 +36,6 @@
 
 </distributionManagement>
 
-Edit.m2/settings.xml and add nexus server credentials
-<settings>
-	<servers>
-		<server>
-
-<id>tiet</id>
-
-<username>admin</username>
-
-<password>admin</password>
-
-</server>
-
-</servers>
-
-</settings>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
