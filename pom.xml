@@ -22,7 +22,7 @@
 
 </repositories>
 
-<distribution Management>
+<distributionManagement>
 
 <repository>
 
@@ -34,7 +34,7 @@
 
 </repository>
 
-</distribution Management>
+</distributionManagement>
 
 Edit.m2/settings.xml and add nexus server credentials
 <settings>
